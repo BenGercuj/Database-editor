@@ -29,8 +29,6 @@ CREATE TABLE `movies` (
   `genre1` varchar(20) DEFAULT NULL,
   `genre2` varchar(20) DEFAULT NULL,
   `director` varchar(45) DEFAULT NULL,
-  `times_shown` int(11) DEFAULT '0',
-  `times_seen` int(11) DEFAULT '0',
   `age_restriction` int(11) DEFAULT NULL,
   PRIMARY KEY (`idmovies`)
 ) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -42,7 +40,7 @@ CREATE TABLE `movies` (
 
 LOCK TABLES `movies` WRITE;
 /*!40000 ALTER TABLE `movies` DISABLE KEYS */;
-INSERT INTO `movies` VALUES (2,'Háború és Békés','06:41:00','Drama','Thriller','Jane Doe',0,0,18),(3,'Stanton Csatája','02:11:00','Action','Drama','Jane Doe',0,0,16),(24,'Gyurika Kalandjai II','01:42:00','Adventure','','John Doe',0,0,NULL),(41,'Gyurika Kalandjai','01:36:00','Adventure','','John Doe',0,0,NULL),(50,'Stanton Csatája II','02:39:00','Action','Drama','Jane Doe',0,0,16);
+INSERT INTO `movies` VALUES (2,'Háború és Békés','06:41:00','Drama','Thriller','Jane Doe',18),(3,'Stanton Csatája','02:11:00','Action','Drama','Jane Doe',16),(24,'Gyurika Kalandjai II','01:42:00','Adventure','','John Doe',NULL),(41,'Gyurika Kalandjai','01:36:00','Adventure','','John Doe',NULL),(50,'Stanton Csatája II','02:39:00','Action','Drama','Jane Doe',16);
 /*!40000 ALTER TABLE `movies` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
